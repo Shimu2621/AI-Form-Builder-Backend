@@ -30,11 +30,7 @@ router.post(
 router.get('/', auth([userRoles.ADMIN, userRoles.USER]), getAllForms);
 
 // Get all forms (for admin)
-router.get(
-  '/admin/all',
-  auth([userRoles.ADMIN]),
-  getAllFormsForAdmin,
-);
+router.get('/admin/all', auth([userRoles.ADMIN]), getAllFormsForAdmin);
 
 // Get single form by id
 router.get('/:id', auth([userRoles.ADMIN, userRoles.USER]), getFormById);

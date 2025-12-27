@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import OpenAI from 'openai';
 import config from '../../config';
 import { Form } from './form.model';
