@@ -35,11 +35,7 @@ router.post(
   resetPassword,
 );
 
-router.get(
-  '/admin/users',
-  auth([userRoles.ADMIN]),
-  getAllUsersForAdmin,
-);
+router.get('/admin/users', auth([userRoles.ADMIN]), getAllUsersForAdmin);
 
 router.patch(
   '/admin/update-plan/:userId',

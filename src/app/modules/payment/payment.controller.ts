@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Request, Response } from 'express';
 import * as PaymentService from './payment.servies';
 import { AuthRequest } from '../../middlewares/auth';
@@ -11,7 +13,9 @@ export const checkout = async (req: AuthRequest, res: Response) => {
     const userId = req.user?._id;
 
     if (!userId) {
-      res.status(401).json({ success: false, message: 'Unauthorized: User not found' });
+      res
+        .status(401)
+        .json({ success: false, message: 'Unauthorized: User not found' });
       return;
     }
 
@@ -20,7 +24,10 @@ export const checkout = async (req: AuthRequest, res: Response) => {
       return;
     }
 
-    const session = await PaymentService.createCheckoutSession(items, userId as any);
+    const session = await PaymentService.createCheckoutSession(
+      items,
+      userId as any,
+    );
     res.status(200).json({ success: true, url: session.url });
   } catch (error) {
     console.error(error);
@@ -41,7 +48,9 @@ export const complete = async (req: Request, res: Response) => {
     const planName = userPlanTypes.PREMIUM;
 
     if (!userId) {
-      res.status(400).json({ success: false, message: 'User ID not found in session' });
+      res
+        .status(400)
+        .json({ success: false, message: 'User ID not found in session' });
       return;
     }
 

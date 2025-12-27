@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import config from '../../config';
 import stripe from '../../utils/stripe';
 import { Subscription } from './subscription.model';
@@ -19,7 +20,10 @@ interface CreateSubscriptionData {
   endsAt: Date | null;
 }
 
-export const createCheckoutSession = async (items: LineItem[], userId: string) => {
+export const createCheckoutSession = async (
+  items: LineItem[],
+  userId: string,
+) => {
   const line_items = items.map((item) => ({
     price_data: {
       currency: item.currency,

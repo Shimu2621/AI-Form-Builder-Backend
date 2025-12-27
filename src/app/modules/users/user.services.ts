@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { User } from './user.model';
 import bcrypt from 'bcrypt';
 import { generateToken } from '../../utils/generateToken';

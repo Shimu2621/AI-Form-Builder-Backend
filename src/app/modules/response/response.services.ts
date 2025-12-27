@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { IResponse } from './response.interface';
 import { ResponseModel } from './response.model';
 
