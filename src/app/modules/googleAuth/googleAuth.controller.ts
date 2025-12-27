@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // src/app/modules/Auth/GoogleAuth/googleAuth.controller.ts
 
 import { Request, Response, NextFunction } from 'express';
@@ -57,7 +58,9 @@ export const GoogleAuthController = {
 
       if (!code) {
         console.error('Google OAuth callback: No authorization code received.');
-        return res.redirect('https://www.aiformgenerator.cloud/login?error=access_denied');
+        return res.redirect(
+          'https://www.aiformgenerator.cloud/login?error=access_denied',
+        );
       }
 
       try {
@@ -117,7 +120,9 @@ export const GoogleAuthController = {
       console.log(
         'Google login failed after callback. Redirecting to frontend error page: https://www.aiformgenerator.cloud/login?error=auth_failed_redirect',
       );
-      res.redirect('https://www.aiformgenerator.cloud/login?error=auth_failed_redirect');
+      res.redirect(
+        'https://www.aiformgenerator.cloud/login?error=auth_failed_redirect',
+      );
     }
   },
 
