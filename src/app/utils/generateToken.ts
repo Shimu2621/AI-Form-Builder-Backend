@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import jwt from 'jsonwebtoken';
 import config from '../config';
 
 export const generateToken = (user: any) => {
   const userObject = user.toObject ? user.toObject() : user;
-  
+
   // IMPORTANT: Remove password from the object before signing for security
   if (userObject.password) {
     delete userObject.password;
