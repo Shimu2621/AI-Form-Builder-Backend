@@ -77,9 +77,6 @@ export const resetPassword = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-// Forgot password: You can add logic to send an email with a reset link/token.
-// For simplicity, not included here.
-
 export const getAllUsersForAdmin = catchAsync(
   async (req: Request, res: Response) => {
     const { page, limit, searchTerm } = req.query;
@@ -109,7 +106,7 @@ export const updateUserPlanByAdmin = catchAsync(
     sendResponse(res, {
       statusCode: 200,
       success: true,
-      message: "User's plan updated successfully by admin",
+      message: "User's plan updated successfully for admin",
       data: updatedUser,
     });
   },
