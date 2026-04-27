@@ -14,7 +14,7 @@ const userSchema = new Schema<IUser>(
       enum: ['normal', 'premium'],
       default: userPlanTypes.NORMAL,
     },
-    role: { type: String, enum: ['user', 'admin'], default: defaultRole },
+    role: { type: String, enum: ['user'], default: defaultRole },
     formLimit: { type: Number, default: 20 },
   },
   {
