@@ -71,7 +71,7 @@ export const getFormById: RequestHandler = async (
   try {
     const form = await FormService.getFormById(id);
     if (!form) {
-      res.status(404).json({ success: false, message: 'Form not work' });
+      res.status(404).json({ success: false, message: 'Form not found' });
       return;
     }
     res.status(200).json({ success: true, data: form });
