@@ -16,7 +16,7 @@ const getFormsPerMonth = catchAsync(async (req: AuthRequest, res: Response) => {
   sendResponse(res, {
     statusCode: 200,
     success: true,
-    message: 'Forms  fetched successfully',
+    message: 'Forms per month fetched successfully',
     data: result,
   });
 });
