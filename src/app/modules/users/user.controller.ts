@@ -106,7 +106,7 @@ export const updateUserPlanByAdmin = catchAsync(
     sendResponse(res, {
       statusCode: 200,
       success: true,
-      message: "User's plan updated successfully for admin",
+      message: "User's plan updated successfully by admin",
       data: updatedUser,
     });
   },
