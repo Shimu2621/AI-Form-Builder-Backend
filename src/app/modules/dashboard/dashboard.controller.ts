@@ -45,7 +45,7 @@ const getResponsesByForm = catchAsync(
     if (!req.user || !req.user._id) {
       res
         .status(401)
-        .json({ success: false, message: 'Unauthorized: Users not found' });
+        .json({ success: false, message: 'Unauthorized: User not found' });
       return;
     }
     const userId = req.user._id;
