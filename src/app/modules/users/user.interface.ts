@@ -10,5 +10,5 @@ export interface IUser {
   photo?: string;
   planType?: IPlanType;
   role?: IRole;
-  // formLimit?: number;
+  formLimit?: number;
 }
