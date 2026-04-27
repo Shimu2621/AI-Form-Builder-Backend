@@ -74,7 +74,7 @@ export const complete = async (req: Request, res: Response) => {
 
     res.status(200).json({
       success: true,
-      message: 'Your payment was successful ',
+      message: 'Your payment was successful and subscription is now active!',
       subscription: {
         planName: subscription.planName,
         status: subscription.status,
