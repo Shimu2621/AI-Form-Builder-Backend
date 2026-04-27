@@ -53,7 +53,7 @@ const getResponsesByForm = catchAsync(
     sendResponse(res, {
       statusCode: 200,
       success: true,
-      message: 'Responses by form fetched successfully',
+      message: 'Responses  fetched successfully',
       data: result,
     });
   },
