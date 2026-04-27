@@ -71,7 +71,7 @@ const getFormStatus = catchAsync(async (req: AuthRequest, res: Response) => {
   sendResponse(res, {
     statusCode: 200,
     success: true,
-    message: 'Form status fetched successfully',
+    message: 'Form  fetched successfully',
     data: result,
   });
 });
