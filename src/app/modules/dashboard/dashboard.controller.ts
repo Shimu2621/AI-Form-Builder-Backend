@@ -34,7 +34,7 @@ const getResponsesOverTime = catchAsync(
     sendResponse(res, {
       statusCode: 200,
       success: true,
-      message: 'Responses over time fetched successfully',
+      message: 'Responses  fetched successfully',
       data: result,
     });
   },
