@@ -123,7 +123,7 @@ const getResponseSubmissionTrendForAdmin = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: 200,
     success: true,
-    message: 'Responses submission trend data fetched successfully',
+    message: 'Response submission trend data fetched successfully',
     data: result,
   });
 });
