@@ -6,7 +6,7 @@ export interface IUser {
   _id?: string;
   name: string;
   email: string;
-  password: number;
+  password: string;
   photo?: string;
   planType?: IPlanType;
   role?: IRole;
