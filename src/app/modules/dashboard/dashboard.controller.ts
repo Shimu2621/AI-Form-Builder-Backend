@@ -113,7 +113,7 @@ const getFormCreationTrendForAdmin = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: 200,
     success: true,
-    message: 'Form creation trend data fetched successfully',
+    message: 'Form creation trends data fetched successfully',
     data: result,
   });
 });
