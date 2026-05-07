@@ -120,7 +120,7 @@ export const updateUserRoleByAdmin = catchAsync(
     sendResponse(res, {
       statusCode: 200,
       success: true,
-      message: "User's role updated successfully by admin",
+      message: "User's role updated successfully by admins",
       data: updatedUser,
     });
   },
