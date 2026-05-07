@@ -93,7 +93,7 @@ const getUserGrowthForAdmin = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: 200,
     success: true,
-    message: 'User growths data fetched successfully',
+    message: 'User growth data fetched successfully',
     data: result,
   });
 });
