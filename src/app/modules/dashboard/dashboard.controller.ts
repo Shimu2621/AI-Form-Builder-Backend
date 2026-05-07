@@ -82,7 +82,7 @@ const getAdminDashboardStats = catchAsync(
     sendResponse(res, {
       statusCode: 200,
       success: true,
-      message: 'Admin dashboard stats fetched successfully',
+      message: 'Admin dashboard  fetched successfully',
       data: result,
     });
   },
