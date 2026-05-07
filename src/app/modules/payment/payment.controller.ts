@@ -87,7 +87,7 @@ export const complete = async (req: Request, res: Response) => {
     console.error(error);
     res
       .status(500)
-      .json({ success: false, message: 'Error retrieving payment result' });
+      .json({ success: false, message: 'Error retrieving payments result' });
   }
 };
 
@@ -101,7 +101,7 @@ export const getSubscription = catchAsync(
       if (!req.user || !req.user._id) {
         res
           .status(401)
-          .json({ success: false, message: 'Unauthorized: user not found' });
+          .json({ success: false, message: 'Unauthorized: User not found' });
         return;
       }
       const userId = req.user._id;
