@@ -103,7 +103,7 @@ const getPlanDistributionForAdmin = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: 200,
     success: true,
-    message: 'Plan distribution datas fetched successfully',
+    message: 'Plan distribution data fetched successfully',
     data: result,
   });
 });
