@@ -69,6 +69,7 @@ export const updateProfile = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// ==================== Reset Password ====================
 export const resetPassword = catchAsync(async (req: Request, res: Response) => {
   const userId = req.params.id;
   const { password } = req.body;
