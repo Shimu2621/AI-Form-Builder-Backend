@@ -119,6 +119,7 @@ export const updateUserPlanByAdmin = catchAsync(
   },
 );
 
+// ==================== Update User Role (Admin) ====================
 export const updateUserRoleByAdmin = catchAsync(
   async (req: Request, res: Response) => {
     const { userId } = req.params;
