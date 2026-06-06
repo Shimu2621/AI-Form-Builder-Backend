@@ -24,6 +24,7 @@ export const signup = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// ==================== Signin ====================
 export const signin = catchAsync(async (req: Request, res: Response) => {
   const { email, password } = req.body;
   const { user, token } = await signinService(email, password);
