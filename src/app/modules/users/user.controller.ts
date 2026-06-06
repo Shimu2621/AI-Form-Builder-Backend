@@ -57,6 +57,7 @@ export const getUserData = catchAsync(
   },
 );
 
+// ==================== Update Profile ====================
 export const updateProfile = catchAsync(async (req: Request, res: Response) => {
   const userId = req.params.id;
   const updated = await updateProfileService(userId, req.body);
