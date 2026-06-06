@@ -104,6 +104,7 @@ export const getAllUsersForAdmin = catchAsync(
   },
 );
 
+// ==================== Update User Plan (Admin) ====================
 export const updateUserPlanByAdmin = catchAsync(
   async (req: Request, res: Response) => {
     const { userId } = req.params;
