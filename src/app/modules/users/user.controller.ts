@@ -13,6 +13,7 @@ import {
 } from './user.services';
 import { AuthRequest } from '../../middlewares/auth';
 
+// ==================== Signup ====================
 export const signup = catchAsync(async (req: Request, res: Response) => {
   const user = await signupService(req.body);
   sendResponse(res, {
