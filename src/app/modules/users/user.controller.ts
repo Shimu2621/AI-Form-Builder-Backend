@@ -37,6 +37,7 @@ export const signin = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// ==================== Get User Data ====================
 export const getUserData = catchAsync(
   async (req: AuthRequest, res: Response) => {
     if (!req.user || !req.user._id) {
