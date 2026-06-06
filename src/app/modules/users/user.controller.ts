@@ -82,6 +82,7 @@ export const resetPassword = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+// ==================== Get All Users (Admin) ====================
 export const getAllUsersForAdmin = catchAsync(
   async (req: Request, res: Response) => {
     const { page, limit, searchTerm } = req.query;
