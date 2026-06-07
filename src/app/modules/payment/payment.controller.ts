@@ -7,6 +7,7 @@ import { userPlanTypes } from '../users/user.constant';
 import catchAsync from '../../utils/catchAsync';
 import { updateProfileService } from '../users/user.services';
 
+// Checkout Controller
 export const checkout = async (req: AuthRequest, res: Response) => {
   try {
     const items = req.body.items;
