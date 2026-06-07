@@ -98,6 +98,7 @@ export const cancel = (_req: Request, res: Response) => {
   res.redirect('/pricing');
 };
 
+// Get Subscription Controller
 export const getSubscription = catchAsync(
   async (req: AuthRequest, res: Response) => {
     try {
