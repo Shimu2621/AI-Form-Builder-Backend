@@ -39,6 +39,7 @@ export const checkout = async (req: AuthRequest, res: Response) => {
   }
 };
 
+// Complete Payment Controller
 export const complete = async (req: Request, res: Response) => {
   const sessionId = req.query.session_id as string;
 
