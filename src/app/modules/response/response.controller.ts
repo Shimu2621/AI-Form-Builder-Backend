@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import * as ResponseService from './response.services';
 
+// Submit Response Controller
 export const submitResponse = async (req: Request, res: Response) => {
   const { formId } = req.params;
   const { answers } = req.body;
