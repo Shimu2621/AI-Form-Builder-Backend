@@ -18,6 +18,7 @@ export const submitResponse = async (req: Request, res: Response) => {
   }
 };
 
+// Get Responses Controller
 export const getResponses = async (req: Request, res: Response) => {
   const { formId } = req.params;
 
