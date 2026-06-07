@@ -93,6 +93,7 @@ export const complete = async (req: Request, res: Response) => {
   }
 };
 
+// Cancel Payment Controller
 export const cancel = (_req: Request, res: Response) => {
   res.redirect('/pricing');
 };
