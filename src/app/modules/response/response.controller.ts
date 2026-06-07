@@ -33,6 +33,7 @@ export const getResponses = async (req: Request, res: Response) => {
   }
 };
 
+// Get Single Response Controller
 export const getSingleResponse = async (req: Request, res: Response) => {
   const { responseId } = req.params;
 
