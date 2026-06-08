@@ -129,6 +129,7 @@ export const GoogleAuthController = {
     }
   },
 
+  // Logout User
   logout: (req: Request, res: Response) => {
     req.session = null;
     res.redirect('https://www.aiformgenerator.cloud/signin');
