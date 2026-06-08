@@ -109,6 +109,7 @@ export const GoogleAuthController = {
     },
   ),
 
+  // Google Callback Redirect
   googleCallbackRedirect: (req: Request, res: Response) => {
     if (req.session?.user && req.session.token) {
       console.log(
