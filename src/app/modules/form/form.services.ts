@@ -9,6 +9,7 @@ const openai = new OpenAI({
   apiKey: config.OPENAI_API_KEY,
 });
 
+// Generate Form Fields with AI
 export const generateFormFields = async (prompt: string): Promise<any[]> => {
   const aiPrompt = `Generate JSON field definitions for a form based on this description: "${prompt}". 
 Each field should have name, label, type (text, email, number, select, etc.), and required (true/false) and don't generate any file fields rather than generate a text field where take the document link (e.g. "http://example.com/document.pdf") from user. For selecting options, provide an array of options.`;
