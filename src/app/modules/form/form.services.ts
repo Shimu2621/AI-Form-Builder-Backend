@@ -104,6 +104,7 @@ export const getFormById = async (id: string) => {
   return form;
 };
 
+// Update Form
 export const updateForm = async (id: string, formData: any) => {
   const updatedForm = await Form.findByIdAndUpdate(id, formData, { new: true });
   if (!updatedForm) {
