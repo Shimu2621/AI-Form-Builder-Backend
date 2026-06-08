@@ -127,6 +127,7 @@ export const togglePublishForm: RequestHandler = async (
   }
 };
 
+// Delete Form Controller
 export const deleteForm: RequestHandler = async (
   req: Request,
   res: Response,
