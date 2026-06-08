@@ -43,6 +43,7 @@ declare module 'express-serve-static-core' {
 }
 
 export const GoogleAuthController = {
+  // Google Login
   googleLogin: catchAsync(async (req: Request, res: Response) => {
     const authorizeUrl = oAuth2Client.generateAuthUrl({
       access_type: 'offline',
