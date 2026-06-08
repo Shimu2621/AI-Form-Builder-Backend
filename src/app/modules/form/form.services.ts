@@ -113,6 +113,7 @@ export const updateForm = async (id: string, formData: any) => {
   return updatedForm;
 };
 
+// Delete Form
 export const deleteForm = async (id: string) => {
   const deletedForm = await Form.findByIdAndDelete(id);
   if (!deletedForm) {
