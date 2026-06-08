@@ -53,6 +53,7 @@ export const GoogleAuthController = {
     res.redirect(authorizeUrl);
   }),
 
+  // Google Callback
   googleCallback: catchAsync(
     async (req: Request, res: Response, next: NextFunction) => {
       const code = req.query.code as string;
