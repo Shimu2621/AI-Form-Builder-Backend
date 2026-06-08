@@ -135,6 +135,7 @@ export const GoogleAuthController = {
     res.redirect('https://www.aiformgenerator.cloud/signin');
   },
 
+  // Ensure Authenticated User
   ensureAuthenticated: (req: Request, res: Response, next: NextFunction) => {
     if (req.session?.user) {
       return next();
