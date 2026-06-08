@@ -148,6 +148,7 @@ export const deleteForm: RequestHandler = async (
   }
 };
 
+// Get All Forms For Admin Controller
 export const getAllFormsForAdmin: RequestHandler = async (req, res) => {
   const { page, limit, searchTerm } = req.query;
 
