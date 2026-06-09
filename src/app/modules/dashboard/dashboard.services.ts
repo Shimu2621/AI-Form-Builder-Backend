@@ -172,6 +172,7 @@ const getUserGrowthForAdmin = async () => {
   return userGrowth;
 };
 
+// Get Form Creation Trend For Admin
 const getPlanDistributionForAdmin = async () => {
   const planDistribution = await User.aggregate([
     {
