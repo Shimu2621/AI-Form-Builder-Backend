@@ -27,6 +27,7 @@ export const updateProfileSchema = z.object({
   }),
 });
 
+// Forgot Password Validation Schema
 export const forgotPasswordSchema = z.object({
   body: z.object({
     email: z.string().email(),
