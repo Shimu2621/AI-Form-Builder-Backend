@@ -20,6 +20,7 @@ export const getResponses = async (formId: string): Promise<IResponse[]> => {
   return await ResponseModel.find({ formId }).sort({ submittedAt: -1 });
 };
 
+// Get Single Response
 export const getSingleResponse = async (
   responseId: string,
 ): Promise<IResponse | null> => {
