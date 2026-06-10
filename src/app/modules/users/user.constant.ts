@@ -6,6 +6,8 @@ export const userRoles = {
 
 // Default User Role
 export const defaultRole = 'user';
+
+// User Plan Constants
 export const userPlanTypes = {
   NORMAL: 'normal',
   PREMIUM: 'premium',
