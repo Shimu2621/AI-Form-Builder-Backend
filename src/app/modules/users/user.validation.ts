@@ -17,6 +17,7 @@ export const signinSchema = z.object({
   }),
 });
 
+// Update Profile Validation Schema
 export const updateProfileSchema = z.object({
   body: z.object({
     name: z.string().optional(),
