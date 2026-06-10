@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+// Signup Validation Schema
 export const signupSchema = z.object({
   body: z.object({
     name: z.string().min(1),
