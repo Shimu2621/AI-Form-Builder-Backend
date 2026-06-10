@@ -9,6 +9,7 @@ export const signupSchema = z.object({
   }),
 });
 
+// Signin Validation Schema
 export const signinSchema = z.object({
   body: z.object({
     email: z.string().email(),
