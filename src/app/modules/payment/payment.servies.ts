@@ -89,6 +89,7 @@ export const addSubscription = async (data: CreateSubscriptionData) => {
   return subscription;
 };
 
+// Get Subscription By User ID
 export const getSubscriptionByUserId = async (userId: string) => {
   const subscriptions = await Subscription.find({ userId });
   return subscriptions;
