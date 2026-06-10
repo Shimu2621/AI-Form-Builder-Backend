@@ -15,6 +15,7 @@ export const createResponse = async (
   return response;
 };
 
+// Get Responses
 export const getResponses = async (formId: string): Promise<IResponse[]> => {
   return await ResponseModel.find({ formId }).sort({ submittedAt: -1 });
 };
