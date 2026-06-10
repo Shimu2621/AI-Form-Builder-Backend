@@ -34,6 +34,7 @@ export const forgotPasswordSchema = z.object({
   }),
 });
 
+// Reset Password Validation Schema
 export const resetPasswordSchema = z.object({
   body: z.object({
     password: z.string().min(6),
