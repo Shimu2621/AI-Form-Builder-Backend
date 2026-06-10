@@ -12,4 +12,6 @@ export const userPlanTypes = {
   NORMAL: 'normal',
   PREMIUM: 'premium',
 } as const;
+
+// Default User Plan
 export const defaultPlan = userPlanTypes.NORMAL;
