@@ -66,6 +66,7 @@ export const getCheckoutResult = async (sessionId: string) => {
   return { session, lineItems };
 };
 
+// Add Subscription
 export const addSubscription = async (data: CreateSubscriptionData) => {
   const subscription = new Subscription({
     userId: data.userId,
