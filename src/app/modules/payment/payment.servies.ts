@@ -50,6 +50,7 @@ export const createCheckoutSession = async (
   return session;
 };
 
+// Get Checkout Result
 export const getCheckoutResult = async (sessionId: string) => {
   const sessionPromise = stripe.checkout.sessions.retrieve(sessionId, {
     expand: ['payment_intent.payment_method'],
